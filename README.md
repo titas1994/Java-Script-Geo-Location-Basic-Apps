@@ -11,8 +11,8 @@ In this Script I will show the local time, Server Time, Public Ip address Of Use
 <b>Jstz package</b><br>
 Jstz is a simple lighter package for detecting timezone.<b>It also makes use of the Intl API, so you can be confident of its results. To use the package, you can grab the CDN as follows:<br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.6/jstz.min.js"></script><br>
-.
-<!--Ip Address Lookup Script Start Here--><br>
+.<br>
+Ip Address Lookup Script<br>
 <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> <br>
 <script><br>
    $.getJSON("https://api.ipify.org?format=json", function(data) { <br>
