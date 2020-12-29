@@ -8,6 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assetes/style.css">
     <script src="assetes/script.js" defer></script>
+    <!--Ip Address Lookup Script Start Here-->
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
+    <script> 
+        $.getJSON("https://api.ipify.org?format=json", function(data) { 
+            $("#IP").html(data.ip); 
+        }) 
+    </script>
+    <!--End Here-->
 </head> 
 <body>
     <h1>GEO Location App</h1>
@@ -21,16 +29,16 @@
                 <h2>Server Time</h2>
                 <span class="server"></span>
             </div>
+            <div>
+                <h2>Public IP Address</h2>
+                <p id="IP"></p> 
+            </div>
         </div>
         <div id="location" class="sub">
             <h2>And you are in...</h2>
             <div class="address"></div>
         </div>
     </div>
-    <!-- Script here -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.6/jstz.min.js"></script>
-<script>
-  document.getElementById('guess').innerText = jstz.determine().name();
-</script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.6/jstz.min.js"></script> 
 </html>
