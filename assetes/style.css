@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-decoration-color: orangered;
+    text-decoration-style: wavy;
+    text-underline-offset: 10px;
+    font-size: 40px;
+                                
+  }
+  #main {
+    max-width: 900px;
+    display: table;
+    margin-left: 30vw;
+    margin-top: 10vh;
+  }
+  
+  #main .sub {
+    display: block;
+    float: left;
+    min-width: 300px;
+    min-height: 300px;
+    border: 0.5px solid rgb(236, 10, 10);
+    border-radius: 25px;
+    padding: 15px;
+  }
+  #main .sub h2{
+    font-size: 20px;
+  }
+  #main #time {
+    margin-right: 5vw;
+  }
+  
+  #main #time div {
+    display: block;
+    min-height: 120px;
+  }

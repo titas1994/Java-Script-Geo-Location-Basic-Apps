@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GEO Location App</title>
+    <meta name="description" content="GEO Location App">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assetes/style.css">
+    <script src="assetes/script.js" defer></script>
+</head> 
+<body>
+    <h1>GEO Location App</h1>
+    <div id="main">
+        <div id="time" class="sub">
+            <div>
+                <h2>Your local time</h2>
+                <span class="local"></span>
+            </div>
+            <div>
+                <h2>Server Time</h2>
+                <span class="server"></span>
+            </div>
+        </div>
+        <div id="location" class="sub">
+            <h2>And you are in...</h2>
+            <div class="address"></div>
+        </div>
+    </div>
+    <!-- Script here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.6/jstz.min.js"></script>
+<script>
+  document.getElementById('guess').innerText = jstz.determine().name();
+</script>
+</body>
+</html>
